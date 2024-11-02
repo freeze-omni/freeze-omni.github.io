@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Freeze-Omni </title>
+
+  <link rel="icon" style="height: 120px; width: 150px;" href="./static/images/logo.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/my-text-align.css">
+
+  <!-- <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator_bulma.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script> -->
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+
+
+  <style>
+    .no-sort {
+      cursor: default;
+      pointer-events: none;
+      background-image: none !important;
+      /* Remove the sort arrow */
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+
+  <section class="hero" style="height: 250px;">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title is-bold">
+              <img src="static/images/logo.png" style="width:8em;vertical-align: middle" alt="Logo" />
+            </h1>
+            <h2 class="subtitle is-3 publication-subtitle" , style="margin: 0;">
+              Recently, VITA team propose Freeze-Omni, a speech-to-speech dialogue model<br> with both low latency
+              and high intelligence <br>while the training process is based on a frozen LLM.
+
+            </h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="column has-text-centered" style="height: 120px;">
+    <div class="publication-links">
+      <!-- PDF Link. -->
+      <span class="link-block">
+        <a href="" class="external-link button is-normal is-rounded is-white">
+          <span style="font-size: 1rem;"> arXiv</span>
+        </a>
+      </span>
+      <!-- Code Link. -->
+      <span class="link-block">
+        <a href="" class="external-link button is-normal is-rounded is-white">
+          <span style="font-size: 1rem;">Code is coming soon</span>
+        </a>
+      </span>
+      <span class="link-block">
+        <a href="https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models"
+          class="external-link button is-normal is-rounded is-white">
+          <span style="font-size: 1rem;">VITA Team</span>
+        </a>
+      </span>
+    </div>
+  </div>
+
+
+
+  <div class="text-center-custom" style="text-align: center; color: darkgray; margin-bottom: 30px;">
+    <p style=" font-size: 1.25rem;"> All demos on this page are at 1x real time.</p>
+  </div>
+
+
+  <div class="text-center-custom" style="text-align: center; color: rgb(0, 0, 0); margin-bottom: 30px;">
+    <p style=" font-size: 1.25rem;"> Demo on Mandarin question answering.</p>
+  </div>
+  <body class="body">
+    <div class="container">
+      <video src="./static/videos/zh.mp4" controls style="display: block; margin: 0 auto; max-width: 900px;"></video>
+    </div>
+  </body>
+  
+  <div class="text-center-custom" style="text-align: center; color: rgb(0, 0, 0); margin-bottom: 30px; margin-top: 30px;">
+    <p style=" font-size: 1.25rem;"> Demo on English question answering.</p>
+  </div>
+  <body class="body">
+    <div class="container">
+      <video src="./static/videos/en.mp4" controls style="display: block; margin: 0 auto; max-width: 900px;"></video>
+    </div>
+  </body>
+
+  <div class="text-center-custom" style="text-align: center; color: rgb(0, 0, 0); margin-bottom: 30px; margin-top: 30px;">
+    <p style=" font-size: 1.25rem;"> Demo on prompt following and role play.</p>
+  </div>
+  <body class="body">
+    <div class="container">
+      <video src="./static/videos/role.mp4" controls style="display: block; margin: 0 auto; max-width: 900px;"></video>
+    </div>
+  </body>
+
+
+
+<style>
+	hr {
+	    border: 3px; /* 移除默认边框 */
+	    height: 2px; /* 设置高度 */
+		width: 70%;
+	    background: grey; /* 设置颜色 */
+		margin: 0 auto;
+	    /* 其他样式 */
+	  }
+	.content h3{
+		font-size: 100%;
+		font-weight: 400;
+		font-family: 'Söhne', sans-serif;
+		line-height: 1.5;
+		color: black;
+		text-align: left;
+		
+	} 
+</style>
+
+ 
+
+    <style> 
+
+      .input-box,
+      .output-box {
+		  
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 14px;
+        /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+        margin-bottom: 25px;
+      }
+
+      .input-box p,
+      .output-box p {
+        margin: 0;
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		unicode-bidi: isolate;
+		font-family: 'Söhne', sans-serif;
+		color: black;
+		font-size: 1.1em;
+		font-weight: 400;
+		line-height: 1.5;
+      }
+
+      .nav-buttons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .nav-button {
+		
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        outline: none;
+      }
+
+      .nav-button:focus {
+        outline: none;
+      }
+    </style>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered" style="height: 80px;">
+            <h2 class="title is-3 publication-subtitle">Freeze-Omni Overview</h2>
+          </div>
+          <div class="columns is-centered">
+            <div class="content has-text-justified">
+              <p>
+                 Freeze-Omni is a speech-to-speech dialogue model, exhibiting
+		the characteristic of being "<strong>smart</strong>" as it is constructed upon a "<strong>frozen</strong>" text-modality LLM. 
+		This enables it to keep the original intelligence of the LLM backbone, without being affected by the forgetting
+		problem induced by the fine-tuning process for integration of the speech modality. Specifically,
+		Freeze-Omni contains a speech encoder that supports streaming speech input and a speech decoder
+		that generates streaming output speech. <strong> Three key strategies </strong> are adopted to implement the speech-to-speech dialogue system:
+    <br><br><strong> Chunk-wise Streaming Input</strong>. Freeze-Omni has a speech encoder supporting chunk-wise streaming input speech features to obtain a fast response to input.
+    A 3-stage training strategy can help it keep strong acoustic robustness.
+    <br><br><strong> AR-base Speech Output</strong>. Freeze-Omni has an AR speech decoder based on a single codebook, which can achieve low-latency speech output in streaming.
+        A prefix tuning method is used so that training on only a small amount of Q&A data can achieve the ability of high-quality speech synthesis.
+      <br><br><strong> Chunk-level State Prediction</strong>. Freeze-Omni adds a classification layer after the last layer of the backbone LLM to predict different states. 
+      These states will determine whether the LLM interrupts the user or not so that achieve a duplex dialogue for the user and bot.
+              </p>
+            </div>
+          </div>
+          <img src="./static/images/overview.png" alt="data-composition"
+            style="text-align: center; margin-top: 50px; margin-bottom: 50px;" />
+          <div class="columns is-centered">
+            <div class="content has-text-justified">
+              <p>
+                 Besides we implement a <strong> Model as a Server </strong> strategy. We first started several models simultaneously and regarded them 
+		as a server. Then, when a user's VAD was triggered, the speech would be sent to the server in the form of chunks, 
+		and the server would be responsible for scheduling which idle model should respond to the current chunk. Since
+		we separated all the kv-cache and CNN cache of the speech encoder and LLM during the inference
+		process, the server only needs to save the inference cache for each user. In this way, any model in the
+		server could respond to any chunk of any user, and there was no need to specify which model was
+		used as a monitor or a generator.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered" style="height: 80px;">
+            <h2 class="title is-3 publication-subtitle">Experimental Results</h2>
+          </div>
+          <div class="columns is-centered">
+            <div class="content has-text-justified">
+              <p>
+                <strong> Evaluation of speech understanding through ASR tasks, using CER(%) and WER(%).</strong>
+              </p>
+            </div>
+          </div>
+          <img src="./static/images/asr_res.png" alt="data-composition"
+            style="text-align: center; margin-top: 10px; margin-bottom: 10px;" />
+          <div class="columns is-centered" style="height: 80px;">
+            <div class="content has-text-justified">
+              <p> <br><br><strong>Evaluation of output speech quality on different top-k of AR decoder by using CER(%).</strong></p>
+            </div>
+          </div>
+          <img src="./static/images/out_cer.png" alt="data-composition"
+            style="text-align: center; margin-top: 10px; margin-bottom: 10px;" />
+          <div class="columns is-centered" style="height: 80px;">
+            <div class="content has-text-justified">
+              <p> <br><br><strong> Evaluation of spoken question answering on accuracy(%). </strong></p>
+            </div>
+          </div>
+          <img src="./static/images/qa.png" alt="data-composition"
+            style="text-align: center; margin-top: 10px; margin-bottom: 10px;" />
+	  <div class="columns is-centered" style="height: 80px;">
+            <div class="content has-text-justified">
+              <p> <br><br><strong> Analysis of end-to-end latency for different parts. </strong></p>
+            </div>
+          </div>
+          <img src="./static/images/lattency.png" alt="data-composition"
+            style="text-align: center; margin-top: 10px; margin-bottom: 10px;" />
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="hero is-light is-small">
+      <div class="hero-body has-text-centered">
+        <h1 class="title is-3 publication-subtitle" id="citation">Citation</h1>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+
+        <pre><code>
+    @article{,
+      title={Freeze-Omni: A Smart and Low Latency Speech-to-speech Dialogue Model with Frozen LLM},
+      author={Xiong Wang, Yangze Li, Chaoyou Fu, Lei Xie, Ke Li, Xing Sun, Long Ma},
+      journal={arXiv preprint arXiv},
+      year={2024}
+    }
+</code></pre>
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <!-- <div class="container"> -->
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p style="text-align: center;">
+              This website is adapted from <a href="https://vita-home.github.io/">VITA</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </footer>
+
+</body>
+
+</html>
