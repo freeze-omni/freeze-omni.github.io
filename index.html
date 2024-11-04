@@ -54,7 +54,7 @@
               <img src="static/images/logo.png" style="width:8em;vertical-align: middle" alt="Logo" />
             </h1>
             <h2 class="subtitle is-3 publication-subtitle" , style="margin: 0;">
-              Recently, VITA team propose Freeze-Omni, a speech-to-speech dialogue model<br> with both low latency
+              Recently, the VITA team proposed Freeze-Omni, a speech-to-speech dialogue model<br> with both low-latency
               and high intelligence <br>while the training process is based on a frozen LLM.
 
             </h2>
@@ -69,7 +69,7 @@
     <div class="publication-links">
       <!-- PDF Link. -->
       <span class="link-block">
-        <a href="" class="external-link button is-normal is-rounded is-white">
+        <a href="https://arxiv.org/abs/2411.00774" class="external-link button is-normal is-rounded is-white">
           <span style="font-size: 1rem;"> arXiv</span>
         </a>
       </span>
@@ -217,9 +217,9 @@
     <br><br><strong> Chunk-wise Streaming Input</strong>. Freeze-Omni has a speech encoder supporting chunk-wise streaming input speech features to obtain a fast response to input.
     A 3-stage training strategy can help it keep strong acoustic robustness.
     <br><br><strong> AR-base Speech Output</strong>. Freeze-Omni has an AR speech decoder based on a single codebook, which can achieve low-latency speech output in streaming.
-        A prefix tuning method is used so that training on only a small amount of Q&A data can achieve the ability of high-quality speech synthesis.
+        A prefix tuning method is used so that training on only a small amount of Q&A data can achieve the ability to produce high-quality speech synthesis.
       <br><br><strong> Chunk-level State Prediction</strong>. Freeze-Omni adds a classification layer after the last layer of the backbone LLM to predict different states. 
-      These states will determine whether the LLM interrupts the user or not so that achieve a duplex dialogue for the user and bot.
+      These states will determine whether or not the LLM interrupts the user to achieve a duplex dialogue for the user and the bot.
               </p>
             </div>
           </div>
@@ -300,10 +300,10 @@
       <div class="container is-max-desktop content">
 
         <pre><code>
-    @article{,
+    @article{xiong2024freeze,
       title={Freeze-Omni: A Smart and Low Latency Speech-to-speech Dialogue Model with Frozen LLM},
-      author={Xiong Wang, Yangze Li, Chaoyou Fu, Lei Xie, Ke Li, Xing Sun, Long Ma},
-      journal={arXiv preprint arXiv},
+      author={Xiong Wang and Yangze Li and Chaoyou Fu and Lei Xie and Ke Li and Xing Sun and Long Ma},
+      journal={arXiv preprint arXiv:2411.00774},
       year={2024}
     }
 </code></pre>
